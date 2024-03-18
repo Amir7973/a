@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #id {
+        width: 100px;
+        height: 50px;
+      }
+      #txt {
+        font-size: 100px;
+        color: red;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <button id="btn">روی من کلیک کنید</button>
+      <h3 id="txt" hidden>قزای کصت</h3>
+    </div>
+  </body>
+
+  <script>
+    const btn = document.querySelector("#btn");
+    const txt = document.querySelector("#txt");
+    btn.addEventListener("click", () => {
+      txt.removeAttribute("hidden");
+    });
+  </script>
+</html>
